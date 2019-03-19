@@ -64,9 +64,9 @@
 		<router-link to='/buy' class="buy-p">
 			选座购票
 		</router-link>
-		<transition name='fade'>
+		<!-- <transition name='fade'>
 			<router-view></router-view>
-		</transition>
+		</transition> -->
 	</div>
 </template>
 <script>

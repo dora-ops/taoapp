@@ -29,13 +29,13 @@ export default {
     }
   },
   components:{loader},
-  watch:{//监听路由变化
-     "$route"(to,from){
-        if(to.path != from.path){
-          this.listenUrl();
-        }
-    }
-  }
+//   watch:{//监听路由变化
+//      "$route"(to,from){
+//         if(to.path != from.path){
+//           this.listenUrl();
+//         }
+//     }
+//   }
 }
 </script>
 

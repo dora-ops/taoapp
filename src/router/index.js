@@ -8,6 +8,7 @@ import Movie from '@/components/movie/Movie'
 
 import Cinema from '@/components/cinema/Cinema'
 import User from '@/components/user/User'
+import Registry from '@/components/login/Registry'
 import Buy from '@/components/buy/Buy'
   import MovieCard from '@/components/user/MovieCard'
 
@@ -26,13 +27,14 @@ export default new Router({
   base : __dirname,
   routes: [
     {path: '/',redirect: '/movie'},
+    {path: '/registry',component:Registry},
     {path: '/movie',component:Movie,children:[
     	{path : '/',component:Hot},
     	{path : 'begin',component:Begin},
     ]},
     {path: '/buy',component: Buy},
     {path: '/cinema',component: Cinema},
-    {path: '/user',component: User,children:[
+    {path: '/user',name:'user',component: User,children:[
       {path : 'card',component:MovieCard},
     ]},
   ]

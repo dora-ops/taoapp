@@ -60,16 +60,17 @@
       created(){
        if(!data){
           var href = location.href;
-          var url = '/api/data';
-          if(href.indexOf('taopp') != -1){
-            url = '/data.json';
-          }
-          this.$http.get(url).then((response) => {
-            response = response.body;
-            if(response.data.returnCode == 0){
-              this.movieList = data = response.data.returnValue;
+          var url = '/api/base/getAll';
+        //   if(href.indexOf('taopp') != -1){
+        //     url = '/data.json';
+        //   }
+        var param={table:'movie'}
+          this.$http.post(url,param).then((response) => {
+            var list = response.body;
+           
+              this.movieList = data = list;
               this.$parent.$parent.loaderShow = false;
-            }
+            
           });
        }else{
          this.movieList = data;

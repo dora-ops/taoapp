@@ -1,6 +1,6 @@
 <template>
 	<div class="buy" v-if='!!selectSeats'>
-    <login v-show='loginShow'></login>
+    <!-- <login v-show='loginShow'></login> -->
     <!-- title模块 -->
 		<div class="buy-head">
        <p class="movie-showName">{{selectSeats.seatsLocked[0].cinemaName}}</p>
@@ -67,7 +67,7 @@ var data = '';
 import {formatDate} from '@/common/js/formatDate';  //引入时间格式化js文件
 import {getFontSize} from '@/common/js/getHtmlFontSize'; //引入获取fontSize文件
 import buyDetail from '@/components/buy/buyDetail';
-import login from '@/components/login/login';
+// import login from '@/components/login/login';
 import alerts from '@/components/alert/alert';
 import BScroll from 'better-scroll';
 
@@ -88,7 +88,7 @@ export default {
             return formatDate(time,'MM-dd hh:mm');
          }
       },
-      components:{buyDetail,login,alerts},
+      components:{buyDetail,alerts},
       created(){ //获取数据
         if(!data){
          var href = location.href;

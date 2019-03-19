@@ -7,7 +7,8 @@
         	<input v-model='userName' class='login-txt' placeholder="手机号/邮箱/会员名" type="text">
         	<input v-model='userPwd' class="login-pwd" placeholder="请输入密码" type="text">
         	<p class="checkcode-wrap">
-        		<span>免费注册</span>
+                <router-link to="registry"><span>免费注册</span></router-link>
+        		<!-- <a href="./registry"><span>免费注册</span></a> -->
         		<span>忘记密码</span>
         	</p>
         	<button @click='loginBtn' class="login-btn">登录</button>
@@ -34,17 +35,33 @@
 		components:{headers,alerts},
 		methods:{
 			loginBtn(){  //登录按钮操作
-				var _self = this;
-				if(this.userName == this.loginName && this.userPwd == this.loginPwd){
-					sessionStorage.setItem("userName", this.userName);
+                var _self = this;
+                 var url = "/api/user/login";
+				if(this.userName != undefined && this.userPwd != undefined){
+                    this.$http
+          .post(url, { username: this.userName, password: this.userPwd })
+          .then(res => {
+            var data = res.body;
+            if (data.code==-1) {
+                this.$refs.alerts.opts = {
+			  			content : data.msg,
+                  }
+                  this.$refs.alerts.alertShow = true;
+                  return
+            }
+            sessionStorage.setItem("userName", this.userName);
 					sessionStorage.setItem("userPwd", this.userPwd);
 			  		this.$refs.alerts.opts = {
 			  			content : '登录成功',
 			  		}
 			  		setTimeout(function(){
-						_self.$parent.loginShow = false;
+                        _self.$parent.loginShow = false;
+                        this.$router.push({name:'user'})
 			  		},1000)
 			  		this.$refs.alerts.alertShow = true;
+           
+          });
+					
 				}else{
 					this.$refs.alerts.opts = {
 			  			content : '请正确输入用户名及密码；用户名与密码都为111111',

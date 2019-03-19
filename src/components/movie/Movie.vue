@@ -8,6 +8,7 @@
           </div> 
    		</div>
       <transition name='slide'>
+          <!-- router-link -->
         <router-view class='movie-box'></router-view>
       </transition>
       <!-- https://blog.csdn.net/luoyu6/article/details/80098145 只有一个原理 -->

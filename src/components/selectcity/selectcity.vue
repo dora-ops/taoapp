@@ -371,7 +371,7 @@
     <div class="city-list"><span class="city-letter" id="W">W</span>
       <p @click='selectEvent($event)' data-id="330300">温州市</p>
       <p @click='selectEvent($event)' data-id="320200">无锡市</p>
-      <p @click='selectEvent($event)' data-id="150900">乌兰察布市</p>
+      <!-- <p @click='selectEvent($event)' data-id="150900">乌兰察布市</p>
       <p @click='selectEvent($event)' data-id="150300">乌海市</p>
       <p @click='selectEvent($event)' data-id="340200">芜湖市</p>
       <p @click='selectEvent($event)' data-id="420100">武汉市</p>
@@ -386,12 +386,12 @@
       <p @click='selectEvent($event)' data-id="532600">文山壮族苗族自治州</p>
       <p @click='selectEvent($event)' data-id="659004">五家渠市</p>
       <p @click='selectEvent($event)' data-id="640300">吴忠市</p>
-      <p @click='selectEvent($event)' data-id="650100">乌鲁木齐市</p>
+      <p @click='selectEvent($event)' data-id="650100">乌鲁木齐市</p> -->
     </div>
     <div class="city-list"><span class="city-letter" id="X">X</span>
       <p @click='selectEvent($event)' data-id="140900">忻州市</p>
       <p @click='selectEvent($event)' data-id="152500">锡林郭勒盟</p>
-      <p @click='selectEvent($event)' data-id="130500">邢台市</p>
+      <!-- <p @click='selectEvent($event)' data-id="130500">邢台市</p>
       <p @click='selectEvent($event)' data-id="152200">兴安盟</p>
       <p @click='selectEvent($event)' data-id="320300">徐州市</p>
       <p @click='selectEvent($event)' data-id="410700">新乡市</p>
@@ -410,12 +410,12 @@
       <p @click='selectEvent($event)' data-id="610400">咸阳市</p>
       <p @click='selectEvent($event)' data-id="532800">西双版纳傣族自治州</p>
       <p @click='selectEvent($event)' data-id="630100">西宁市</p>
-      <p @click='selectEvent($event)' data-id="810100">香港特别行政区</p>
+      <p @click='selectEvent($event)' data-id="810100">香港特别行政区</p> -->
     </div>
     <div class="city-list"><span class="city-letter" id="Y">Y</span>
       <p @click='selectEvent($event)' data-id="320282">宜兴市</p>
       <p @click='selectEvent($event)' data-id="222400">延边朝鲜族自治州</p>
-      <p @click='selectEvent($event)' data-id="321000">扬州市</p>
+      <!-- <p @click='selectEvent($event)' data-id="321000">扬州市</p>
       <p @click='selectEvent($event)' data-id="140800">运城市</p>
       <p @click='selectEvent($event)' data-id="320900">盐城市</p>
       <p @click='selectEvent($event)' data-id="140300">阳泉市</p>
@@ -440,12 +440,12 @@
       <p @click='selectEvent($event)' data-id="610600">延安市</p>
       <p @click='selectEvent($event)' data-id="654000">伊犁哈萨克自治州</p>
       <p @click='selectEvent($event)' data-id="640100">银川市</p>
-      <p @click='selectEvent($event)' data-id="632700">玉树藏族自治州</p>
+      <p @click='selectEvent($event)' data-id="632700">玉树藏族自治州</p> -->
     </div>
     <div class="city-list"><span class="city-letter" id="Z">Z</span>
       <p @click='selectEvent($event)' data-id="130700">张家口市</p>
       <p @click='selectEvent($event)' data-id="330681">诸暨市</p>
-      <p @click='selectEvent($event)' data-id="321100">镇江市</p>
+      <!-- <p @click='selectEvent($event)' data-id="321100">镇江市</p>
       <p @click='selectEvent($event)' data-id="320582">张家港市</p>
       <p @click='selectEvent($event)' data-id="211300">朝阳市</p>
       <p @click='selectEvent($event)' data-id="430800">张家界市</p>
@@ -467,7 +467,7 @@
       <p @click='selectEvent($event)' data-id="442000">中山市</p>
       <p @click='selectEvent($event)' data-id="620700">张掖市</p>
       <p @click='selectEvent($event)' data-id="512000">资阳市</p>
-      <p @click='selectEvent($event)' data-id="640500">中卫市</p>
+      <p @click='selectEvent($event)' data-id="640500">中卫市</p> -->
     </div>
   </div>
 </div>

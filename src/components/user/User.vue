@@ -11,6 +11,21 @@
           <p @click='discountClick'>优惠券</p>
         </li>
         <li>
+          <p @click='alert'>个人信息</p>
+        </li>
+        <li>
+          <p @click='shoucan'>收藏</p>
+        </li>
+        <li>
+          <p @click='pinglun'>评论管理</p>
+        </li>
+         <li>
+          <p @click='userManage'>用户管理</p>
+        </li>
+        <li>
+          <p @click='workMange'>作品管理</p>
+        </li>
+        <li>
           <p @click='alert'>帮助中心</p>
         </li>
         <li>
@@ -18,9 +33,9 @@
         </li>
       </ul>
   </div>
-    <transition name='move'>
+    <!-- <transition name='move'>
       <login v-show='loginShow'></login>
-    </transition>
+    </transition> -->
     <transition name='move'>
       <discount v-show='discount'></discount>
     </transition>
@@ -38,7 +53,7 @@ import discount from '@/components/user/discount';
 export default {
   data () {
     return {
-      loginShow:true,
+    //   loginShow:true,
       discount:false,
     }
   },
@@ -57,14 +72,14 @@ export default {
   created(){
   	this.$parent.loaderShow = false;
   },
-  watch:{
-    $route(to,from){
-      var _self = this;
-      setTimeout(function(){
-        _self.$parent.loaderShow = false;
-      },200)
-    }
-  },
+//   watch:{
+//     $route(to,from){
+//       var _self = this;
+//       setTimeout(function(){
+//         _self.$parent.loaderShow = false;
+//       },200)
+//     }
+//   },
   components:{login,discount,alerts},
 }
 </script>
